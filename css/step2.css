@@ -1,0 +1,97 @@
+@import url(./common.css);
+
+/* ====================================
+components ===============
+==================================== */
+.inner {width: 100%;max-width: var(--layout);margin: 0 auto; }
+.button,
+button {box-sizing: border-box;display: block;padding: 1.3rem 2.3rem;border-radius: 0.8rem;text-align: center;line-height: 1; flex:0 0 auto;}
+.button.cta {transition: all 0.5s;border: 1px solid transparent;color: var(--gray40);background: var(--gradient); }
+/* 방법1 */
+.button.ghost {background-image: linear-gradient(53deg, #fff 2.85%, #fff 151.96%), linear-gradient(53deg, #4c6dd0 2.85%, #04befe 151.96%);border: 2px solid transparent;background-origin: border-box;background-clip: padding-box, border-box;color: var(--primary_40); }
+/* 방법2
+.button.ghost { box-sizing: border-box; border: 2px solid transparent; border-image: var(--gradient); border-image-slice: 1; } */
+.button.normal {padding: 1rem; }
+
+/* ====================================
+layout ===============
+==================================== */
+.wrap {display: flex;flex-direction: column;row-gap: 8.4rem; }
+.mo{display:none;}
+.pc{display:block;}
+/* ====================================
+header ===============
+==================================== */
+.gnb {left: 0;right: 0;background: rgba(255, 255, 255, 0.25);backdrop-filter: blur(10px);z-index: 2; }
+.gnb .inner {justify-content: space-between;align-items: center; }
+.gnb .inner .menu {justify-content: space-between;line-height: calc(var(--row) * 3);width: 100%;max-width: calc(var(--unit) * 5);text-align: center; }
+.gnb .inner .menu li {width: calc(100% / 4); }
+.gnb .inner .util {align-items: start;column-gap: 2.8rem; }
+
+.main_banner {height: 0;padding-bottom: 56.25%;overflow: hidden;background-color: #eae3e2; }
+.response_video {height: 120vh;left: 50%;transform: translateX(-50%); width: 100%;}
+video {width: 100%;}
+.headline {max-width: calc(var(--unit) * 4);left: 50%;top: 20%;transform: translateX(-50%);flex-direction: column;align-items: center;padding: 2rem;row-gap: 1.6rem;text-align: center; }
+.headline h1,
+.headline h4,
+.headline .cta {z-index: 5555; }
+.headline h1 {font-weight: 700;background: var(--gradient, linear-gradient(53deg, #4c6dd0 2.85%, #04befe 151.96%));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;word-break: auto-phrase; }
+.headline .cta {margin-top: 1.2rem;padding-left: 4.8rem;padding-right: 4.8rem; }
+.headline:after {content: '';position: absolute;background: var(--gray10);width: 100%;height: 100%;filter: blur(50px) opacity(0.1);border-radius: 20%;top: -10%; }
+/* 모바일메뉴 */
+	.mo_btn {
+		display: block;
+		padding: 1.2rem 2rem;
+	}
+	header .gnb.mo .menu {
+		padding: 2.8rem 0;
+		position: absolute;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.309);
+		backdrop-filter: blur(20px);
+		flex-direction: column;
+		align-items: center;
+		top: 5.6rem;
+		left: 0;
+		gap: 1rem;
+	}
+/* ====================================
+main ===============
+==================================== */
+section {display: flex;flex-direction: column;row-gap: 2.8rem; }
+section .sec_tit {align-self: center;width: calc(var(--unit) * 3);height: calc(var(--row) * 3);text-align: center; }
+section .sec_tit h2 {font-weight: 600; }
+section .sec_tit span {color: var(--gray70); }
+
+section.propose {margin-bottom: 8.4rem; }
+section.subscribe {height: 15.8rem; }
+
+section.propose .lists {width: 100%;height: 38rem;column-gap: var(--gu); }
+section.propose .lists .card {flex-direction: column;width: calc(25% - var(--gu));box-sizing: border-box;padding: 2.8rem;border: 1px solid var(--gray40);border-radius: 0.8rem;justify-content: space-between;row-gap: 1.4rem; }
+section.propose .lists .card .card_desc {flex-direction: column;row-gap: 0.7rem; }
+section.propose .lists .card .card_desc .card_desc_tit {justify-content: space-between; }
+
+section.propose .lists .card .card_desc .card_desc_tit span {font-size: 1.3rem;text-transform: capitalize;letter-spacing: 0;color: var(--gray70, #505050); }
+section.propose .lists .card .card_desc .card_desc_body {overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;line-clamp: 2;box-orient: vertical; }
+section.propose .pager {height: 2.8rem;padding: 0.5rem 3rem;justify-content: center;align-items: center;gap: 2.8rem; }
+section.propose .pager a:first-child {color: var(--gray60, #a3a3a3); }
+
+section.subscribe .input_group {margin: auto;display: flex;width: calc(var(--unit) * 5);height: 5.6rem;background: var(--gradient);border-radius: 0.8rem; }
+section.subscribe .input_group label {top: 0.2rem;left: 0.2rem;width: calc(100% - 0.4rem);height: calc(100% - 0.4rem);background-color: var(--gray10);border-radius: 0.6rem; }
+section.subscribe .input_group input {border: none;outline: none;appearance: none;background: transparent;padding: 1.4rem;font-size: 1.8rem;line-height: 2.8rem;color: var(--primary_40);caret-color: var(--primary_40); }
+section.subscribe .input_group button {top: 0;right: 0;bottom: 0;width: 20.4rem;border-top-left-radius: 0;border-bottom-left-radius: 0; }
+
+/* ====================================
+footer ===============
+==================================== */
+footer {background: var(--primary_10);display: flex;flex-direction: column;justify-content: space-between;align-items: center;gap: 1.6rem;padding-top: 2.8rem; }
+footer .sitemap {display: flex;justify-content: space-between; }
+footer .sitemap .map {width: 14.4rem;min-height: var(--row); }
+footer .sitemap .map .h4 {margin-bottom: var(--g); }
+footer .sitemap .map.sns {width: 15.4rem;flex-wrap: wrap;gap: 0 1.4rem; }
+footer .sitemap .map.sns a {width: 4.2rem;height: 4.3rem;background-repeat: no-repeat;background-image: url(../imgs/sns3.svg); }
+footer .sitemap .map.sns a.logo {background-image: url(../imgs/logo.svg);flex: 0 0 100%; }
+footer .sitemap .map.sns a.sns2 {background-position: -5.6rem 0; }
+footer .sitemap .map.sns a.sns3 {background-position: -11.2rem 0; }
+
+footer .copyright {text-align: center;width: 100%;height: calc(var(--row) * 2);line-height: calc(var(--row) * 2);background-color: var(--primary_20); }

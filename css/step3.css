@@ -1,0 +1,137 @@
+@media screen and (max-width: 1000px) {
+	section.propose .lists .card .card_desc .card_desc_tit {
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 800px) {
+	main,footer,nav {
+		padding: 0 2.8rem;
+	}
+	section.propose .lists {
+		flex-wrap: wrap;
+		flex: 1 1 100%;
+		gap: 2.8rem;
+	}
+	section.propose .lists .card {
+		flex: 1 1 40%;
+	}
+}
+@media screen and (max-width: 580px) {
+	:root {
+		--col: 11.6rem;
+		--g: 1.4rem;
+		--gu: calc(var(--g) * 2);
+		--row: 2.8rem;
+		--unit: calc(var(--col) + var(--gu));
+		--layout: calc(var(--unit) * 4 - var(--gu));
+	}
+	button,
+	.button {
+		padding-top: 1.6rem;
+		padding-bottom: 1.6rem;
+	}
+	html {
+		font-size: 62.5%; /* 16*62.5/100 = 10px */
+	}
+	.pc {
+		display: none;
+	}
+	.mo {
+		display: block;
+		height: calc(var(--row) * 2);
+	}
+	.inner {
+		width: 100%;
+		max-width: var(--layout);
+		margin: 0 auto;
+	}
+
+	/* ====================================
+   header ===============
+  ==================================== */
+	.mo_btn {
+		display: block;
+		padding: 1.2rem 2rem;
+	}
+	header .gnb.mo .menu {
+		padding: 2.8rem 0;
+		position: absolute;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.309);
+		backdrop-filter: blur(20px);
+		flex-direction: column;
+		align-items: center;
+		top: 5.6rem;
+		left: 0;
+		gap: 1rem;
+	}
+	header .gnb.mo .menu li {
+		width: 100%;
+		max-width: var(--layout);
+		flex: 1 1 100%;
+	}
+	header .gnb.mo .menu li a {
+		height: calc(var(--row) * 2);
+		line-height: calc(var(--row) * 2);
+		padding: 0;
+	}
+	.main_banner {
+		padding-bottom: 150%; /* 580/360*100=161 */
+	}
+	.response_video,
+	video {
+		height: 100vh;
+		width: auto;
+	}
+	.headline {
+		width: calc(100% - 14.6rem);
+	}
+	/* ====================================
+  main ===============
+  ==================================== */
+	section {
+		width: calc(100% - 4.6rem);
+	}
+	section.propose .lists {
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		height: auto;
+		gap: 2.8rem;
+	}
+	section.propose .lists .card {
+		width: 100%;
+		height: auto;
+	}
+	section.subscribe .input_group {
+		width: calc(100% - 3.8rem);
+	}
+	/* ====================================
+  footer ===============
+  ==================================== */
+
+	footer {
+		padding: 3.8rem;
+		flex-flow: nowrap row;
+	}
+	footer .map:not(.sns) {
+		display: none;
+	}
+	footer .map:is(.sns) {
+		flex-flow: row nowrap;
+	}
+	footer .sitemap .map.sns.df {
+		flex: 1 1 30%;
+		width: 30%;
+	}
+	footer .sitemap .map.sns.df a {
+		flex: 0 0 4.4rem;
+	}
+	footer .copyright {
+		text-align: right;
+		height: auto;
+		background: none;
+		flex: 1 1 auto;
+	}
+} /*
+========= (max-width: 580px) ================= */

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <link rel="stylesheet" href="common.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      height: 100px;
+    }
+
+    nav {
+      height: 100px;
+    }
+
+    main {
+      height: 780px;
+    }
+
+    .article1 {
+      width: 100%;
+      height: 100px;
+    }
+
+    .article2 {
+      width: 100%;
+      height: 200px;
+    }
+
+    .article3 {
+      width: 50%;
+      height: 480px;
+    }
+
+    .article4 {
+      width: 50%;
+      height: 480px;
+    }
+
+    footer {
+      height: 100px;
+    }
+
+    .container {
+      box-sizing: border-box;
+      width: 1200px;
+      max-width: calc(100% - 20px);
+      margin: 0 auto;
+      padding: 0 10px;
+      height: inherit;
+      background-color: rgba(255, 255, 255, 0.507);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="container"></div>
+    </header>
+    <nav>
+      <div class="container"></div>
+    </nav>
+    <main class="main">
+      <div class="container">
+        <article class="article1 gray700"></article>
+        <article class="article2 gray600"></article>
+        <article class="article3 gray500"></article>
+        <article class="article4 gray400"></article>
+      </div>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+</body>
+
+</html>

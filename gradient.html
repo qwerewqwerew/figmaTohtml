@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .gradient {
+      position: relative;
+      min-height: 200px;
+      background-image: linear-gradient(to right,
+          #007bff,
+          #009996);
+      z-index: 1;
+    }
+
+    .gradient::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom,
+          #ff0044,
+          #cc6900);
+      z-index: -1;
+      transition: opacity 0.5s linear;
+      opacity: 0;
+    }
+
+    .gradient:hover::before {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gradient"><a href="#">test to verify content remains visible & on top</a></div>
+</body>
+
+</html>

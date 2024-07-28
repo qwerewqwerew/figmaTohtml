@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/step2.css">
+  <!-- <link rel="stylesheet" href="./css/step3.css" media="screen and (max-width:580px)"> -->
+  <link rel="stylesheet" href="./css/step3.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="pr">
+      <!-- .pc.gnb -->
+      <nav class="pc gnb pa">
+        <div class="inner df">
+          <h1><a href="#" class="ir_so">LOGO</a><img src="./imgs/logo.svg" alt="logo"></h1>
+          <ul class="menu df">
+            <li><a href="#">추천앱</a></li>
+            <li><a href="#">최신앱</a></li>
+            <li><a href="#">인기앱</a></li>
+            <li><a href="#">블로그</a></li>
+          </ul>
+          <div class="util df">
+            <a href="#" class="button ghost">로그인</a><a href="#" class="button cta">회원가입</a>
+          </div><!-- //.util -->
+        </div>
+      </nav>
+      <!-- //.pc.gnb -->
+      <!-- .mo.gnb -->
+      <nav class="mo gnb pa">
+        <div class="inner df">
+          <h1><a href="#" class="ir_so">LOGO</a><img src="./imgs/logo.svg" alt="logo"></h1>
+          <a href="#" class="button ghost mo_btn"><i class="fa-solid fa-bars"></i></a>
+          <ul class="menu df">
+            <li><a href="#">추천앱</a></li>
+            <li><a href="#">최신앱</a></li>
+            <li><a href="#">인기앱</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#" class="button ghost">로그인</a></li>
+            <li><a href="#" class="button cta">회원가입</a></li>
+          </ul>
+        </div>
+      </nav> <!-- //.mo.gnb -->
+      <div class="main_banner pr">
+        <div class="response_video pa">
+          <video src="./imgs/video.mp4" muted autoplay loop></video>
+        </div>
+        <div class="headline pa df">
+          <h1>사회적 기업의 가치와 사회적 영향력</h1>
+          <h4>퇴근길에 이런 유익한 글을 보니 기분이 좋네요.</h4>
+          <a href="#" class="button cta">자세히보기</a>
+        </div> <!-- //.headline -->
+      </div> <!-- //.main_banner -->
+    </header>
+    <main>
+      <section class="propose inner">
+        <!-- .sec_tit+ul.lists+ul.lists+.pager -->
+        <div class="sec_tit">
+          <h2>추천앱</h2>
+          <span>고효율 작업을 위한 생산성 도구 추천</span>
+        </div> <!-- //.sec_tit -->
+        <ul class="lists df">
+          <!-- li.card>img.card_img+(.card_desc>.card_desc_tit+.card_desc_body)+a.button.ghost -->
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+        </ul> <!-- //.lists -->
+        <ul class="lists df">
+          <!-- li.card>img.card_img+(.card_desc>.card_desc_tit+.card_desc_body)+a.button.ghost -->
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+        </ul> <!-- //.lists -->
+        <div class="pager df"><a href="#" class="comment">1</a><a href="#" class="comment">2</a><a href="#" class="comment">3</a><a href="#<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/step2.css">
+  <!-- <link rel="stylesheet" href="./css/step3.css" media="screen and (max-width:580px)"> -->
+  <link rel="stylesheet" href="./css/step3.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="pr">
+      <!-- .pc.gnb -->
+      <nav class="pc gnb pa">
+        <div class="inner df">
+          <h1><a href="#" class="ir_so">LOGO</a><img src="./imgs/logo.svg" alt="logo"></h1>
+          <ul class="menu df">
+            <li><a href="#">추천앱</a></li>
+            <li><a href="#">최신앱</a></li>
+            <li><a href="#">인기앱</a></li>
+            <li><a href="#">블로그</a></li>
+          </ul>
+          <div class="util df">
+            <a href="#" class="button ghost">로그인</a><a href="#" class="button cta">회원가입</a>
+          </div><!-- //.util -->
+        </div>
+      </nav>
+      <!-- //.pc.gnb -->
+      <!-- .mo.gnb -->
+      <nav class="mo gnb pa">
+        <div class="inner df">
+          <h1><a href="#" class="ir_so">LOGO</a><img src="./imgs/logo.svg" alt="logo"></h1>
+          <a href="#" class="button ghost mo_btn"><i class="fa-solid fa-bars"></i></a>
+          <ul class="menu df">
+            <li><a href="#">추천앱</a></li>
+            <li><a href="#">최신앱</a></li>
+            <li><a href="#">인기앱</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#" class="button ghost">로그인</a></li>
+            <li><a href="#" class="button cta">회원가입</a></li>
+          </ul>
+        </div>
+      </nav> <!-- //.mo.gnb -->
+      <div class="main_banner pr">
+        <div class="response_video pa">
+          <video src="./imgs/video.mp4" muted autoplay loop></video>
+        </div>
+        <div class="headline pa df">
+          <h1>사회적 기업의 가치와 사회적 영향력</h1>
+          <h4>퇴근길에 이런 유익한 글을 보니 기분이 좋네요.</h4>
+          <a href="#" class="button cta">자세히보기</a>
+        </div> <!-- //.headline -->
+      </div> <!-- //.main_banner -->
+    </header>
+    <main>
+      <section class="propose inner">
+        <!-- .sec_tit+ul.lists+ul.lists+.pager -->
+        <div class="sec_tit">
+          <h2>추천앱</h2>
+          <span>고효율 작업을 위한 생산성 도구 추천</span>
+        </div> <!-- //.sec_tit -->
+        <ul class="lists df">
+          <!-- li.card>img.card_img+(.card_desc>.card_desc_tit+.card_desc_body)+a.button.ghost -->
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+        </ul> <!-- //.lists -->
+        <ul class="lists df">
+          <!-- li.card>img.card_img+(.card_desc>.card_desc_tit+.card_desc_body)+a.button.ghost -->
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+          <li class="card df">
+            <img src="./imgs/img.jpg" alt="" class="card_img">
+            <div class="card_desc df">
+              <div class="card_desc_tit df">
+                <h3>이용약관 답변 봇</h3>
+                <span>shareware</span>
+              </div>
+              <div class="card_desc_body">건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.</div>
+            </div>
+            <a href="#" class="button ghost">자세히보기</a>
+          </li>
+        </ul> <!-- //.lists -->
+        <div class="pager df"><a href="#" class="comment">1</a><a href="#" class="comment">2</a><a href="#" class="comment">3</a><a href="#" class="comment">4</a></div> <!-- //.pager -->
+      </section> <!-- //section.propose -->
+      <section class="subscribe inner">
+        <div class="sec_tit">
+          <h2>구독신청</h2>
+          <span>고효율 작업을 위한 생산성 도구 추천</span>
+        </div>
+        <form action="#" method="post">
+          <div class="input_group pr">
+            <label for="subscribe" class="pa">
+              <input type="email" id="subscribe" placeholder="이메일 주소를 작성하세요"></label>
+            <button type="submit" class="pa cta button">신청하기</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="sitemap inner">
+        <div class="map df sns">
+          <a href="#" class="logo"></a>
+          <a href="#" class="sns1"></a>
+          <a href="#" class="sns2"></a>
+          <a href="#" class="sns3"></a>
+        </div>
+        <dl class="map">
+          <dt class="h4">리소스</dt>
+          <dd><a href="#">소개</a></dd>
+          <dd><a href="#">블로그</a></dd>
+          <dd><a href="#">가이드</a></dd>
+          <dd><a href="#">FAQ</a></dd>
+        </dl>
+        <dl class="map">
+          <dt class="h4">지원</dt>
+          <dd><a href="#">이용약관</a></dd>
+          <dd><a href="#">개인정보처리방침</a></dd>
+          <dd><a href="#">저작권정책</a></dd>
+          <dd><a href="#">도움말센터</a></dd>
+        </dl>
+        <dl class="map">
+          <dt class="h4">제품</dt>
+          <dd><a href="#">Window</a></dd>
+          <dd><a href="#">Mac</a></dd>
+          <dd><a href="#">Linuxs</a></dd>
+          <dd><a href="#">Android</a></dd>
+          <dd><a href="#">IOS</a></dd>
+        </dl>
+      </div>
+      <div class="copyright">GoodIT All Right Reserved </div>
+    </footer>
+  </div> <!-- //.wrap -->
+  <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>" class="comment">4</a></div> <!-- //.pager -->
+      </section> <!-- //section.propose -->
+      <section class="subscribe inner">
+        <div class="sec_tit">
+          <h2>구독신청</h2>
+          <span>고효율 작업을 위한 생산성 도구 추천</span>
+        </div>
+        <form action="#" method="post">
+          <div class="input_group pr">
+            <label for="subscribe" class="pa">
+              <input type="email" id="subscribe" placeholder="이메일 주소를 작성하세요"></label>
+            <button type="submit" class="pa cta button">신청하기</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="sitemap inner">
+        <div class="map df sns">
+          <a href="#" class="logo"></a>
+          <a href="#" class="sns1"></a>
+          <a href="#" class="sns2"></a>
+          <a href="#" class="sns3"></a>
+        </div>
+        <dl class="map">
+          <dt class="h4">리소스</dt>
+          <dd><a href="#">소개</a></dd>
+          <dd><a href="#">블로그</a></dd>
+          <dd><a href="#">가이드</a></dd>
+          <dd><a href="#">FAQ</a></dd>
+        </dl>
+        <dl class="map">
+          <dt class="h4">지원</dt>
+          <dd><a href="#">이용약관</a></dd>
+          <dd><a href="#">개인정보처리방침</a></dd>
+          <dd><a href="#">저작권정책</a></dd>
+          <dd><a href="#">도움말센터</a></dd>
+        </dl>
+        <dl class="map">
+          <dt class="h4">제품</dt>
+          <dd><a href="#">Window</a></dd>
+          <dd><a href="#">Mac</a></dd>
+          <dd><a href="#">Linuxs</a></dd>
+          <dd><a href="#">Android</a></dd>
+          <dd><a href="#">IOS</a></dd>
+        </dl>
+      </div>
+      <div class="copyright">GoodIT All Right Reserved </div>
+    </footer>
+  </div> <!-- //.wrap -->
+  <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+  <script src="./ㅓㄴ/script.js"></script>
+</body>
+
+</html>
